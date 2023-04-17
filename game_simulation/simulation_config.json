@@ -1,0 +1,33 @@
+{
+    "general": {
+      "global_time_limit": 24,
+      "max_attempts": 2,
+      "memory_limit": 10,
+      "prompt_meta": "### Instruction:\n{}\n### Response:"
+    },
+    "town_areas": {
+      "Phandalin Town Square": "Town square of the town of Phandalin.",
+      "Stonehill Inn": "In the center of town stands a large, newly built roadhouse of fieldstone and rough-hewn timbers. The common room is filled with locals nursing mugs of ale or cider, all of them eyeing you with curiosity.",
+      "Barthen's Provisions": "Barthen’s is the biggest trading post in Phandalin. Its shelves stock most ordinary goods and supplies, including backpacks, bedrolls, rope, and rations. The place is open from sunup to sundown.",
+      "Edermath Orchard": "A tidy little cottage beside an apple orchard."
+    },
+    "town_people": {
+        "Toblen Stonehill": {
+          "description": "Owns a trading post.",
+          "starting_location": "Stonehill Inn"
+        },
+        "Daran Edermath": {
+          "description": "Daran Edermath is a retired adventurer who lives in a tidy little cottage beside an apple orchard. A fit, silver-haired half-elf well over a hundred years old, Daran is a fighter who served as a marshal and herald for many years in the lands of the Dragon Coast, far to the southeast. Upon retiring, he returned to the Neverwinter region, his original home.",
+          "starting_location": "Edermath Orchard"
+        },
+        "Linene Graywind": {
+          "description": "Runs a trading post.",
+          "starting_location": "Barthen's Provisions"
+        },
+        "Halia Thornton": {
+          "description": "An ambitious and calculating human woman. She is the guildmaster of Phandalin Miner’s Exchange, a trading post where local miners have their valuable finds weighed, measured, and paid out. In her attempts to establish the Miner's Exchange as the closest thing the town has to a governing authority, she acts as more than a simple merchant.",
+          "starting_location": "Phandalin Town Square"
+        }
+      }
+}
+  
