@@ -2,6 +2,7 @@ import openai
 import re
 import os
 from dotenv import load_dotenv
+from transformers import pipeline
 
 # Load environment variables from .env file
 load_dotenv()
@@ -11,28 +12,41 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 
-def generate(prompt):
+def generate(prompt, use_openai=True):
     """
-    Generates a text completion for a given prompt using the OpenAI GPT-3 API.
+    Generates a text completion for a given prompt using either the OpenAI GPT-3 API or the Hugging Face GPT-3 model.
     
     Args:
     - prompt (str): The text prompt to generate a completion for.
+    - use_openai (bool): A boolean flag indicating whether to use the OpenAI API (True) or the Hugging Face GPT-3 model (False).
     
     Returns:
     - str: The generated text completion.
     """
-    model_engine = "text-davinci-002"
-    response = openai.Completion.create(
-        engine=model_engine,
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
-    )
+    if use_openai:
+        model_engine = "text-davinci-002"
+        response = openai.Completion.create(
+            engine=model_engine,
+            prompt=prompt,
+            max_tokens=1024,
+            n=1,
+            stop=None,
+            temperature=0.5,
+        )
 
-    message = response.choices[0].text
-    return message.strip()
+        message = response.choices[0].text
+        return message.strip()
+
+    else:
+        hf_generator = pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B', device=0)
+        output = hf_generator(prompt, max_length=len(prompt)+128, do_sample=True)
+        out = output[0]['generated_text']
+        if '### Response:' in out:
+            out = out.split('### Response:')[1]
+        if '### Instruction:' in out:
+            out = out.split('### Instruction:')[0]
+        return out.strip()
+
 
 def get_rating(x):
     """

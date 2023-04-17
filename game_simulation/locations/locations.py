@@ -56,6 +56,7 @@ class Locations:
         return self.locations.get(name)
 
     def __str__(self):
-        return '\n'.join(str(loc) for loc in self.locations.values())
+        return '\n'.join([str(location) for location in self.locations.values()])
+
     
 

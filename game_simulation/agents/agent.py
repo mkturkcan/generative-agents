@@ -1,5 +1,6 @@
 import random
 from utils.text_generation import generate, get_rating
+import networkx as nx
 
 class Agent:
      
@@ -39,14 +40,16 @@ class Agent:
         Rates different locations in the simulated environment based on the agent's preferences and experiences.
     """
      
-    def __init__(self, name, description, location=None):
+    def __init__(self, name, description, starting_location, world_graph, use_openai):
         self.name = name
         self.description = description
-        self.location = location
+        self.location = starting_location
         self.memory_ratings = []
         self.memories = []
         self.compressed_memories = []
         self.plans = ""
+        self.world_graph = world_graph
+        self.use_openai = use_openai
         
     def __repr__(self):
         return f"Agent({self.name}, {self.description}, {self.location})"
@@ -64,7 +67,7 @@ class Agent:
         """
 
         prompt = "You are {}. The following is your description: {} You just woke up. What is your goal for today? Write it down in an hourly basis, starting at {}:00. Write only one or two very short sentences. Be very brief. Use at most 50 words.".format(self.name, self.description, str(global_time))
-        self.plans = generate(prompt_meta.format(prompt))
+        self.plans = generate(prompt_meta.format(prompt), self.use_openai)
     
     def execute_action(self, other_agents, location, global_time, town_areas, prompt_meta):
 
@@ -97,7 +100,7 @@ class Agent:
         prompt += ' You know the following about people: ' + '. '.join(people_description)
         
         prompt += "What do you do in the next hour? Use at most 10 words to explain."
-        action = generate(prompt_meta.format(prompt))
+        action = generate(prompt_meta.format(prompt), self.use_openai)
         return action
     
     def update_memories(self, other_agents, global_time, action_results):
@@ -165,7 +168,7 @@ class Agent:
         memory_ratings = []
         for memory in self.memories:
             prompt = "You are {}. Your plans are: {}. You are currently in {}. It is currently {}:00. You observe the following: {}. Give a rating, between 1 and 5, to how much you care about this.".format(self.name, self.plans, locations.get_location(self.location), str(global_time), memory)
-            res = generate(prompt_meta.format(prompt))
+            res = generate(prompt_meta.format(prompt), self.use_openai)
             rating = get_rating(res)
             max_attempts = 2
             current_attempt = 0
@@ -203,7 +206,7 @@ class Agent:
         place_ratings = []
         for location in locations.locations.values():
             prompt = "You are {}. Your plans are: {}. It is currently {}:00. You are currently at {}. How likely are you to go to {} next?".format(self.name, self.plans, str(global_time), locations.get_location(self.location), location.name)
-            res = generate(prompt_meta.format(prompt))
+            res = generate(prompt_meta.format(prompt), self.use_openai)
             rating = get_rating(res)
             max_attempts = 2
             current_attempt = 0
@@ -216,17 +219,17 @@ class Agent:
         self.place_ratings = place_ratings
         return sorted(place_ratings, key=lambda x: x[1], reverse=True)
     
-    def move(self, new_location):
+    def move(self, new_location_name):
 
-        """
-        Moves the agent to a new location in the simulated environment.
-        
-        Parameters:
-        -----------
-        new_location : Location
-            The new Location
-        """
+        if new_location_name == self.location:
+            return self.location
 
-        self.location = new_location.name
-        return new_location
+        try:
+            path = nx.shortest_path(self.world_graph, source=self.location, target=new_location_name)
+            self.location = new_location_name
+        except nx.NetworkXNoPath:
+            print(f"No path found between {self.location} and {new_location_name}")
+            return self.location
+
+        return self.location
 
