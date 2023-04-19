@@ -6,6 +6,12 @@ This repository includes a working version of the type of model described in Gen
 
 The models are distributed as notebooks that are easy to run locally, or on Google Colab. We recommend the use of Jupyter Lab if running locally. The notebook(s) should work as-is on Google Colab.
 
+# How to Use
+
+* The most stable model is available at https://github.com/mkturkcan/generative-agents/tree/main/notebook/Release.
+* WIP models with the latest features will be available in https://github.com/mkturkcan/generative-agents/tree/main/notebook/WIP.
+* A WIP library is available under https://github.com/mkturkcan/generative-agents/tree/main/game_simulation.
+
 ## Model
 
 The current model is a simulation of the town of Phandalin from an introductory D&D 5e adventure. This setting is chosen as it is much more free form than the simple scenario described in the original paper.
@@ -18,6 +24,6 @@ We expect that with the advent of the next generation of instruction-tuned model
 
 ## Future Steps
 
-* Summarize agent decisions as emojis.
+* Summarize agent decisions as emojis. (WIP)
 * Create a family of questions to compress agent contexts better.
 * Check if the agent contexts are compressed well with an another layer of prompts.
