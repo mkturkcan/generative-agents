@@ -1,0 +1,65 @@
+====================== REPEAT 0 ======================
+Toblen Stonehill action: I get out of bed and have breakfast. Then, I go to the market to buy supplies for the trading post. After that, I arrive at the trading post and unload the supplies. Finally, I start trading.
+Daran Edermath action: Daran wakes up and starts his day by making breakfast, then going for a walk in the apple orchard. He works on a new painting for a while before making lunch and writing a letter to an old friend. In the afternoon, he takes a walk in the woods before making dinner and reading a book before bed.
+Linene Graywind action: I get out of bed and make breakfast. Then I go to the trading post and start trading.
+Halia Thornton action: I will wake up and get dressed. I will have breakfast. I will go to the Miner's Exchange. I will work on establishing the Exchange as a governing authority. I will have dinner. I will go to bed.
+=== UPDATED LOCATIONS AT TIME 0 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 0 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Edermath Orchard
+=== UPDATED LOCATIONS AT TIME 0 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 0 FOR Halia Thornton===
+Halia Thornton moved from Phandalin Town Square to Phandalin Town Square
+====================== REPEAT 1 ======================
+Toblen Stonehill action: I wake up, get dressed, and go to my trading post.
+Daran Edermath action: I wake up and make breakfast. I then go for a walk in the woods and work on a jigsaw puzzle. I make dinner and watch the sunset. I read a book and then go to bed.
+Linene Graywind action: I wake up at 1:00 and get out of bed. I take a shower at 2:00 and get dressed at 3:00. I eat breakfast at 4:00 and then go to work at 5:00. I open the store at 6:00 and help customers until 9:00. I do paperwork until 10:00 and then close the store. I go home at 11:00 and eat lunch at 12:00. I take a nap at 1:00 and then get up at 2:00. I make dinner at 3:00 and eat dinner at 4:00. I watch TV at 5:00 and then go to bed at 6:00.
+Halia Thornton action: I will go to the Miner's Exchange and work on establishing it as the governing authority of Phandalin.
+=== UPDATED LOCATIONS AT TIME 1 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 1 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Edermath Orchard
+=== UPDATED LOCATIONS AT TIME 1 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 1 FOR Halia Thornton===
+Halia Thornton moved from Phandalin Town Square to Phandalin Town Square
+====================== REPEAT 2 ======================
+Toblen Stonehill action: I wake up and get breakfast at the tavern. I go to the stables and check on the animals. I go to the market and see what's new. I go back to the trading post and start working. I take a break for dinner. I finish up work for the day. I go to the tavern for a drink. I go to bed.
+Daran Edermath action: Daran Edermath wakes up at 2:00 and eats breakfast at 2:30. He goes for a walk in the apple orchard at 3:00 and works on some gardening at 4:00. He makes dinner at 5:00 and relaxes and reads a book at 6:00. He goes to bed at 7:00.
+Linene Graywind action: I wake up at 2:00 and get dressed at 2:30. I eat breakfast at 3:00 and start work at 4:00. I check inventory at 5:00 and help customers at 6:00. I close up shop at 7:00.
+Halia Thornton action: Get out of bed, have breakfast, go over today's goals, meet with Sildar, train with sword, check on miners, eat dinner, go over today's events, go to bed.
+=== UPDATED LOCATIONS AT TIME 2 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Phandalin Town Square
+=== UPDATED LOCATIONS AT TIME 2 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Edermath Orchard
+=== UPDATED LOCATIONS AT TIME 2 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 2 FOR Halia Thornton===
+Halia Thornton moved from Phandalin Town Square to Stonehill Inn
+====================== REPEAT 3 ======================
+Toblen Stonehill action: I wake up, eat breakfast, open the trading post, trade with customers, close the trading post, eat dinner, and go to bed.
+Daran Edermath action: Daran Edermath gets out of bed and eats breakfast. He then goes for a walk in the apple orchard, checking on the apple trees. After lunch, he relaxes for a bit before going to bed.
+Linene Graywind action: I get out of bed and get breakfast. I start work at 4:00 and take a break at 5:00. I eat dinner at 6:00 and relax at 7:00.
+Halia Thornton action: I wake up and get dressed. I arrive at the Miner's Exchange at 4:00 and begin work.
+=== UPDATED LOCATIONS AT TIME 3 FOR Toblen Stonehill===
+Toblen Stonehill moved from Phandalin Town Square to Phandalin Town Square
+=== UPDATED LOCATIONS AT TIME 3 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Edermath Orchard
+=== UPDATED LOCATIONS AT TIME 3 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 3 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Phandalin Town Square
+====================== REPEAT 4 ======================
+Toblen Stonehill action: I look for signs of the bandits.
+Daran Edermath action: I wake up at 4:00 AM and eat breakfast at 5:00 AM. I go for a walk at 6:00 AM and check the traps at 7:00 AM. I go to town at 8:00 AM and buy groceries at 9:00 AM. I talk to the villagers at 10:00 AM and go home at 11:00 AM. I make lunch at 12:00 PM and eat lunch at 1:00 PM. I take a nap at 2:00 PM and wake up at 3:00 PM. I check the traps at 4:00 PM, go for a walk at 5:00 PM, and go to town at 6:00 PM. I talk to the villagers at 7:00 PM and go home at 8:00 PM. I make dinner at 9:00 PM and eat dinner at 10:00 PM. I go to bed at 11:00 PM.
+Linene Graywind action: I wake up and get dressed. I make breakfast and then open the trading post. I start trading with customers and take a break at 9:00. I continue trading and then close the trading post at 11:00. I eat lunch and then rest for an hour. I prepare for tomorrow and then go to bed.
+Halia Thornton action: I go to the Miner's Exchange.
+=== UPDATED LOCATIONS AT TIME 4 FOR Toblen Stonehill===
+Toblen Stonehill moved from Phandalin Town Square to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 4 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 4 FOR Linene Graywind===
+Linene Graywind moved from Stonehill Inn to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 4 FOR Halia Thornton===
+Halia Thornton moved from Phandalin Town Square to Phandalin Town Square
