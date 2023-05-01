@@ -97,7 +97,7 @@ for repeat in range(repeats):
         logging.info(f"=== UPDATED LOCATIONS AT TIME {global_time} FOR {agent.name}===\n")
         logging.info(f"{agent.name} moved from {old_location} to {new_location_name}\n")
 
-    # print(summarize_simulation(log_output=log_output))
+    print(summarize_simulation(log_output=log_output))
 
     # Increment time
     global_time += 1
