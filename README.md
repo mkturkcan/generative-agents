@@ -2,14 +2,17 @@
   <img src="https://github.com/mkturkcan/generative-agents/blob/main/assets/logo.png?raw=true"  width="180" />
 </p>
 
+<h3 align="center">
+  <p>Generative Large Language Models for Human-Like Behavior</p>
+</h3>
 
-# Generative Large Language Models for Human-Like Behavior
-
-This repository includes a working version of the type of model described in Generative Agents: Interactive Simulacra of Human Behavior.
+This repository includes a working version of the type of model described in [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442).
 
 ## Setup
 
 The models are distributed as notebooks that are easy to run locally, or on Google Colab. We recommend the use of Jupyter Lab if running locally. The notebook(s) should work as-is on Google Colab.
+
+The current version of the repository works best with 16GB VRAM.
 
 # How to Use
 
