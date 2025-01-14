@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/mkturkcan/generative-agents/blob/main/assets/logo.png?raw=true"  width="180" />
+</p>
+
+
 # Generative Large Language Models for Human-Like Behavior
 
 This repository includes a working version of the type of model described in Generative Agents: Interactive Simulacra of Human Behavior.
@@ -24,6 +29,6 @@ We expect that with the advent of the next generation of instruction-tuned model
 
 ## Future Steps
 
-* Summarize agent decisions as emojis. (WIP)
+* Summarize agent decisions as emojis.
 * Create a family of questions to compress agent contexts better.
 * Check if the agent contexts are compressed well with an another layer of prompts.
