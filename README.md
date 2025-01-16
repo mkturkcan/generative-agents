@@ -12,7 +12,7 @@ This repository includes a working version of the type of model described in [Ge
 
 The models are distributed as notebooks that are easy to run locally, or on Google Colab. We recommend the use of Jupyter Lab if running locally. The notebook(s) should work as-is on Google Colab.
 
-The current version of the repository works best with 16GB VRAM.
+The current version of the repository works best with 16GB VRAM, and also supports <8GB VRAM edge/personal computer environments.
 
 # How to Use
 
