@@ -18,9 +18,20 @@ class Location:
     def __init__(self, name, description):
         self.name = name
         self.description = description
+        self.people = []
     
     def __str__(self):
         return self.name
+    
+    def add_people(self, people):
+        if isinstance(people, list):
+            self.people = self.people + people
+        else:
+            self.people = self.people + [people]
+
+    def get_people(self):
+        return self.people
+        
     
     def describe(self):
         print(self.description)
@@ -51,6 +62,9 @@ class Locations:
 
     def add_location(self, name, description):
         self.locations[name] = Location(name, description)
+
+    def get_locations(self):
+        return self.locations
 
     def get_location(self, name):
         return self.locations.get(name)
